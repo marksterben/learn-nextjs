@@ -1,5 +1,6 @@
 import useSWR from "swr";
 import axios from "axios";
+import Link from "next/link";
 
 const fetcher = async (url) => {
   const res = await axios.get(url);
@@ -19,6 +20,9 @@ export default function Csr() {
 
   return (
     <div>
+      <Link href="/">
+        <a>BACK</a>
+      </Link>
       <ul>{listData}</ul>
     </div>
   );
