@@ -22,6 +22,10 @@ export default function Home() {
           <code className={styles.code}>pages/index.js</code>
         </p>
 
+        <Link href="/csr">
+          <a>CSR</a>
+        </Link>
+
         <Link href="/ssr">
           <a>SSR</a>
         </Link>
@@ -30,8 +34,8 @@ export default function Home() {
           <a>SSG</a>
         </Link>
 
-        <Link href="/csr">
-          <a>CSR</a>
+        <Link href="/isr">
+          <a>ISR</a>
         </Link>
 
         <div className={styles.grid}>
