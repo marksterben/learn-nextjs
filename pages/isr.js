@@ -18,7 +18,7 @@ export async function getStaticProps() {
     "https://marksterben-item-list-api.herokuapp.com/api/items"
   );
 
-  return { props: { datas: res.data.items }, revalidate: 60 };
+  return { props: { datas: res.data.items }, revalidate: 20 };
 }
 
 export default Isr;
